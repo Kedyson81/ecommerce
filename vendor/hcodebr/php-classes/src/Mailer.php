@@ -33,6 +33,8 @@ class Mailer {
 
 		$this->mail = new \PHPMailer;
 
+		$this->mail->CharSet = 'UTF-8';
+
 		//Tell PHPMailer to use SMTP
 		$this->mail->isSMTP();
 

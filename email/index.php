@@ -5,6 +5,8 @@ require_once("vendor/autoload.php");
 //Create a new PHPMailer instance
 $mail = new PHPMailer();
 
+$mail->CharSet = 'UTF-8';
+
 //Tell PHPMailer to use SMTP
 $mail->isSMTP();
 
